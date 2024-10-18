@@ -1,0 +1,15 @@
+.result-container {
+    background-color: black; /* Maintain the black background */
+    color: white; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .result-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .result-container p {
+    font-size: 18px;
+  }
+  

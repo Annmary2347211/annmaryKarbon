@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black; /* Set the background to black */
+  color: white; /* Set text color to white for contrast */
+  margin: 0;
+}
+
+header, footer {
+  background-color: #1e1e1e; /* Slightly lighter black for header and footer */
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #6f2c91; /* Purple for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #5b2a80; /* Darker purple on hover */
+  transform: scale(1.05);
+}
