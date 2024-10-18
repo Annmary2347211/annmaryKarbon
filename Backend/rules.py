@@ -56,8 +56,8 @@ def total_borrowing(data: dict, financial_index: int) -> float:
     financials = data["financials"][financial_index]
     
     # Use .get() to safely access 'longTermBorrowing' and provide a default of 0 if it's missing
-    long_term_borrowing = financials["bs"].get("long_term_borrowings", 0)
-    short_term_borrowing = financials["bs"].get("short_term_borrowings", 0)
+    long_term_borrowing = financials["bs"]["liabilities"].get("long_term_borrowings", 0)
+    short_term_borrowing = financials["bs"]["liabilities"].get("short_term_borrowings", 0)
 
     total_borrowing = long_term_borrowing + short_term_borrowing
     return total_borrowing
