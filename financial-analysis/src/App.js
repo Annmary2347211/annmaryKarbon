@@ -20,7 +20,7 @@ function App() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:5000/upload', {
+      const response = await fetch('https://annmarykarbon.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
